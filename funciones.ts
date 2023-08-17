@@ -18,4 +18,4 @@ const times = (number: number) => (otherNumber: number) => otherNumber * number;
 const dividedBy = (number: number) => (otherNumber: number) => otherNumber / number;
 
 console.log(one(plus(one()))); // must return 2
-console.log(one(minus(zero(plus(six()))))); // must return -6
+console.log(one(minus(zero(plus(six()))))); // must return -5
