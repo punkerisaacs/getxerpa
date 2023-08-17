@@ -29,13 +29,13 @@ def nine(operation = None):
     return operation(9) if operation else 9
 
 def plus(number):
-    return lambda x: x + number
+    return lambda other_number: other_number + number
 def minus(number):
-   return lambda x: x - number
+   return lambda other_number: other_number - number
 def times(number):
-    return lambda x: x * number
+    return lambda other_number: other_number * number
 def divided_by(number):
-    return lambda x: x // number
+    return lambda other_number: other_number // number
 
 print(four(times(five()))) # imprime 20
 print(one(plus(eight()))) # imprime 9
