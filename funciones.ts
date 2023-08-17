@@ -17,9 +17,5 @@ const minus = (number: number) => (otherNumber: number) => otherNumber - number;
 const times = (number: number) => (otherNumber: number) => otherNumber * number;
 const dividedBy = (number: number) => (otherNumber: number) => otherNumber / number;
 
-//console.log(seven(times(five())), 35); // must return 35
-//console.log(four(plus(nine())), 13); // must return 13
-//console.log(eight(minus(three())), 5); // must return 5
-
-console.log(one(plus(zero())), 3); // must return 3
-console.log(one(minus(zero(plus(six())))), -6); // must return 3
+console.log(one(plus(one()))); // must return 2
+console.log(one(minus(zero(plus(six()))))); // must return -6
